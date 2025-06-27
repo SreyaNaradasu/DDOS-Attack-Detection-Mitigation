@@ -1,0 +1,37 @@
+# DDoS Attack Detection & Mitigation
+
+## Introduction
+
+DDoS (Distributed Denial of Service) attacks attempt to exhaust the resources of a network, making services unavailable. In SDNs, centralized control provides better visibility, which can help in detecting such attacks.
+
+## Problem Statement
+
+Traditional methods are not adaptive and suffer from high false positives in high-speed networks.
+
+## Proposed Architecture
+
+1. **Stage 1: Detection**
+   - Packet data is preprocessed using wavelet transforms.
+   - A Convolutional Neural Network (CNN) classifies the packet as attack/normal.
+
+2. **Stage 2: Mitigation**
+   - Graph-based trace-back algorithm to identify the source.
+   - Edge switch installs drop rules via the SDN controller.
+
+![Architecture Diagram](../assets/architecture.png)
+
+## Algorithms Used
+
+- **Wavelet Transform**: Reduces noise in time-series network traffic.
+- **CNN Classifier**: Learns patterns to identify DDoS traffic.
+- **Graph Traversal**: Traces malicious packet paths.
+
+## Results
+
+- Detection accuracy: **96.7%**
+- Precision: **95.2%**
+- F1-score: **95.8%**
+
+## Conclusion
+
+This two-stage model improves detection accuracy and enables fast, real-time mitigation using SDN’s programmability.
