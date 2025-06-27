@@ -11,12 +11,6 @@ This repository presents an overview of a two-stage approach to detect and mitig
   - Graph-based traffic tracing to identify the source switch.
   - Flow rule installation at edge switches for mitigation.
 
-## 📁 Folders
-
-- `report/` — Detailed project explanation (exported from Gamma).
-- `slides/` — Optional visual presentation PDF.
-- `assets/` — Diagrams and images from the Gamma document.
-
 ## 🔗 Source
 
 Originally written in [Gamma.app](https://gamma.app/docs/DDoS-Attack-Detection-Mitigation-0akhltx6ug1gm5e).
